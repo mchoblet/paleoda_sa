@@ -24,7 +24,7 @@ Climate model data and proxy record data to run the reconstructions is made avai
 The results of the reconstructions, which can be used to reproduce the figures of the publications are published in another Zenodo repository: https://zenodo.org/records/10622265
 
 # Run the code
-To run the reconstructions, follow the steps in the paper_experiments.ipynb notebook.
+To run the reconstructions, follow the steps in the paper_experiments.ipynb notebook. Change filepaths in the config dictionary to where the input data is stored and where the output data shall be stored.
 
 # Dependencies:
 Running the climate field reconstructions primarily relies on the following packages: 
