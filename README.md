@@ -5,7 +5,7 @@ during the past 2000 years, by Mathurin Choblet et al., to be submitted to Clima
 
 It contains the code to reconstruct *past climates* using *climate model data* and *climate proxy data* using the Paleoclimate Data Assimilation method. This repository in particular implements an efficient multi-time scale method to allow for using climate proxy data that is not dated annually. While the reconstruction here is performed specifically for the South American continent, it can also be equally applied for global climate field reconstructions.
 
-The code is a documented and reduced version of an older repository, which I used for my masters thesis (https://github.com/mchoblet/paleoda)
+The code is a documented and reduced version of an older repository, which I used for my masters thesis (https://github.com/mchoblet/paleoda). The pure Ensemble Kalman Filter algorithm code underlying the algorithm is also stored in https://github.com/mchoblet/ensemblefilters.
 
 For questions and comments feel free to contact me: mathurin [AT] choblet.com
 I’m happy to give any kind of insight into the code.
@@ -41,7 +41,7 @@ You can install the conda environment with which the reconstructions were run.
     ``` 
 
 # Recommend computational resources for running reconstructions.
-At least 16gb of RAM due to input data file sizes. The more cores you have the better. The Math behind the reconstruction is implemented via Numpy Array operations, which make use of all available codes.
+At least 16gb of RAM due to input data file sizes. The more cpu cores you have the better. The math behind the reconstruction is implemented via Numpy Array operations, which automatically makes use of all available cores.
 I recommend testing the reconstruction time for a single Monte Carlo iteration or year before running it for the entire reconstruction. 
 
 # Cite this work:
