@@ -6,7 +6,6 @@ during the past 2000 years, by Mathurin Choblet et al., to be submitted to Clima
 It contains the code to reconstruct *past climates* using *climate model data* and *climate proxy data* using the Paleoclimate Data Assimilation method. This repository in particular implements an efficient multi-time scale method to allow for using climate proxy data that is not dated annually. While the reconstruction here is performed specifically for the South American continent, it can also be equally applied for global climate field reconstructions.
 
 The code is a documented and reduced version of an older repository, which I used for my masters thesis (https://github.com/mchoblet/paleoda). The pure Ensemble Kalman Filter algorithm code underlying the algorithm is also stored in https://github.com/mchoblet/ensemblefilters. 
-Shout-out: When I started this project, I was heavily inspired by the code of the Last Millennium Reanalysis (LMR, https://github.com/modons/LMR, Hakim et al https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016jd024751), which is not up to date (e.g. no xarray support, slower kalman filter implementation ...). Even if the code here is finally very different from the LMR code, this work would not have been possible without LMR.
 
 For questions and comments feel free to contact me: mathurin [AT] choblet.com
 I’m happy to give any kind of insight into the code.
@@ -46,3 +45,6 @@ At least 16gb of RAM due to input data file sizes. The more cpu cores you have t
 I recommend testing the reconstruction time for a single Monte Carlo iteration or year before running it for the entire reconstruction. 
 
 # Cite this work:
+
+# Acknowledgement
+When I started this project in 2022, I was heavily inspired by the code of the Last Millennium Reanalysis (LMR, https://github.com/modons/LMR, Hakim et al https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016jd024751), which is not up to date (e.g. no xarray support, slower kalman filter implementation ...). Even if the code here is finally very different from the LMR code, this work would not have been possible without LMR.
