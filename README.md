@@ -11,10 +11,10 @@ For questions and comments feel free to contact me: mathurin [AT] choblet.com
 I’m happy to give any kind of insight into the code.
 
 # Content
-* ‘paper_experiments.ipynb’ contains the configurations of the reconstruction experiments and starts the algorithm by calling functions in the ‘algorithm’ folder
-* ‘Paper_plots.ipynb’ contains all plotting code to reproduce the figures
-* The ‘algorithm’ folder contains everything related to the reconstruction algorithm in three python scripts (wrapper_new.py which runs the reconstruction, using functions from utils_new.py and the kalman filter algorithms from kalman_filters.py)
-* The ‘data_preprocessing’ contains jupyter-notebook in which the climate model data and proxy record data is standardized and prepared for its use in the paper_experiments notebook. It also contains code for creating speleothem composites, creating the proxy record files and performing linear regressions of climate archives (tree rings and corals) to instrumental data. The notebooks in this folder are mainly stored for documentary reasons if a user would like to know exactly what we did or would like to use the code for different input data. It is not necessary to run these notebooks to run the reconstructions (see next section.)
+* **paper_experiments.ipynb** contains the configurations of the reconstruction experiments and starts the algorithm by calling functions in the ‘algorithm’ folder
+* **Paper_plots.ipynb** contains all plotting code to reproduce the figures
+* The **algorithm** folder contains everything related to the reconstruction algorithm in three python scripts (wrapper_new.py which runs the reconstruction, using functions from utils_new.py and the kalman filter algorithms from kalman_filters.py)
+* The **data_preprocessing** contains jupyter-notebook in which the climate model data and proxy record data is standardized and prepared for its use in the paper_experiments notebook. It also contains code for creating speleothem composites, creating the proxy record files and performing linear regressions of climate archives (tree rings and corals) to instrumental data. The notebooks in this folder are mainly stored for documentary reasons if a user would like to know exactly what we did or would like to use the code for different input data. It is not necessary to run these notebooks to run the reconstructions (see next section.)
 
 
 All scripts and notebooks contain a fair amount of description and comments.
