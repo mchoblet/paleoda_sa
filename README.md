@@ -33,7 +33,6 @@ Running the climate field reconstructions primarily relies on the following pack
 * Scipy
 * Cftime for decoding time units in netcdf files
 * Matplotlib
-* Tqdm for a progress bar
 
 You can install the conda environment with which the reconstructions were run.
     ``` 
