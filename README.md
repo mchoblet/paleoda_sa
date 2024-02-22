@@ -21,7 +21,7 @@ All scripts and notebooks contain a fair amount of description and comments.
 
 # Data needed to run the code:
 Climate model data and proxy record data to run the reconstructions is made available via a Zenodo repository: https://zenodo.org/records/10370001. Note, that this is the data after preprocessing it via the jupyter notebooks in the ‘data_preprocessing’ folder. 
-The results of the reconstructions, which can be used to reproduce the figures of the publications are published in another Zenodo repository: https://zenodo.org/records/10622265
+The results of the reconstructions (data), which can be used to reproduce the figures of the publications are published in another Zenodo repository: https://zenodo.org/records/10622265
 
 # Run the code
 To run the reconstructions, follow the steps in the paper_experiments.ipynb notebook. Change filepaths in the config dictionary to where the input data is stored and where the output data shall be stored.
