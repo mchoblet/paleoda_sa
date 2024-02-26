@@ -22,6 +22,7 @@ All scripts and notebooks contain a fair amount of description and comments.
 # Data needed to run the code:
 Climate model data and proxy record data to run the reconstructions is made available via a Zenodo repository: https://zenodo.org/records/10370001. Note, that this is the data after preprocessing it via the jupyter notebooks in the ‘data_preprocessing’ folder. 
 The results of the reconstructions (data), which can be used to reproduce the figures of the publications are published in another Zenodo repository: https://zenodo.org/records/10622265
+The unprocessed climate model data can be found in https://zenodo.org/records/7516327, which accompanies the publication by Bühler and Axelsson (https://cp.copernicus.org/articles/18/1625/2022/cp-18-1625-2022-discussion.html).
 
 # Run the code
 To run the reconstructions, follow the steps in the paper_experiments.ipynb notebook. Change filepaths in the config dictionary to where the input data is stored and where the output data shall be stored.
@@ -46,4 +47,4 @@ I recommend testing the reconstruction time for a single Monte Carlo iteration o
 # Cite this work:
 
 # Acknowledgement
-When I started this project in 2022, I was heavily inspired by the code of the Last Millennium Reanalysis (LMR, https://github.com/modons/LMR, Hakim et al https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016jd024751), which is not up to date (e.g. no xarray support, slower kalman filter implementation ...). Even if the code here is finally very different from the LMR code, this work would not have been possible without LMR.
+When I started this project in 2022, I was heavily inspired by the code of the Last Millennium Reanalysis (LMR, https://github.com/modons/LMR, Hakim et al https://agupubs.onlinelibrary.wiley.com/doi/full/10.1002/2016jd024751), which is not up to date (e.g. no use of xarray, slower kalman filter implementation ...). Even if the code here is finally very different from the LMR code, this work would not have been possible without LMR as the initial wrapper function was inspired by the LMR wrapper.
