@@ -1,7 +1,7 @@
 # Multi-time scale Paleoclimate Data Assimilation for the reconstruction of South American Hydroclimate
 
 This repository contains all the code needed to reproduce the results and figures of publication A continental reconstruction of hydroclimatic variability in South America
-during the past 2000 years, by Mathurin Choblet et al., to be submitted to Climate of the Past (February 2024).
+during the past 2000 years, by Mathurin Choblet et al.,submitted to Climate of the Past (February 2024): https://egusphere.copernicus.org/preprints/2024/egusphere-2024-545/
 
 It contains the code to reconstruct *past climates* using *climate model data* and *climate proxy data* using the Paleoclimate Data Assimilation method. This repository in particular implements an efficient multi-time scale method to allow for using climate proxy data that is not dated annually. While the reconstruction here is performed specifically for the South American continent, it can also be equally applied for global climate field reconstructions.
 
