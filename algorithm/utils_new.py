@@ -468,7 +468,7 @@ def prior_preparation(cfg,variabs,dictionary):
             trigger=False #see below
             if m=='None' or m=='Annual':
                 #not necessarly reconstruction time! (think of annual proxies, but reconstructing djf/jja mean!!!)
-                m=int(cfg.avg_proxies)i
+                m=int(cfg.avg_proxies)
             elif type(m)==str:
                 m=[int(num) for num in m.split(',')]
                 if m[0]<int(cfg.avg_proxies): trigger=True
@@ -613,7 +613,7 @@ def make_equidistant_target(data,target_time,target_res,method_interpol='nearest
             #already have correct time, checked in start!=first_year
             upsampled=vals_new
         else:
-            raise Exception("Error in time series resampling and interpolation with length>1)
+            raise Exception("Error in time series resampling and interpolation with length>1")
             #import pdb; pdb.set_trace()
 
     ##Fill nans (already done in previous step)
@@ -788,6 +788,9 @@ def load_proxies(c):
             pass
         #demean proxy db with respect to anomaly time
         proxy_db=proxy_db-proxy_db.sel(time=slice(c.anomaly_time[0],c.anomaly_time[1])).mean('time')
+
+        proxy_db=proxy_db.transpose(...,'site')
+
         proxy_db_all.append(proxy_db)
     return proxy_db_all
 
@@ -983,7 +986,7 @@ def resample_wrap(c,proxy_db_all,HXfull_all_fin):
         #will be ignored properly in the kalman filter loop
         else:
             target_time=times_list[ii]
-            target_time.sel(time=slice(c.time[0],c.time[1]))
+            target_time=target_time.sel(time=slice(c.time[0],c.time[1]))
             da = xr.DataArray(np.nan, coords=dict(time=target_time, site=['-1']), dims=("time", "site"))
             da.attrs['DB_members']=[-1]
             final_list.append(da)

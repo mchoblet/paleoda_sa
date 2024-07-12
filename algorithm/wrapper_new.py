@@ -46,7 +46,7 @@ def wrapper_paper(cfg):
     proxy_db_all=utils_new.load_proxies(c)
     #get the list of variables and seasons required for PSMs
     variab_list,variab_season_dict=utils_new.variable_prep(proxy_db_all)
-    #load priors, apply psms. multi-model loop is an artefact from times where i used the multi-model ensemble directly. now i perform reconstructions separately and compute the mean afterwards
+    #load priors, apply psms. multi-model loop is an artefact from times where i used the multi-model ensemble directly. now i perform reconstructions separately and compute the mean afterwards 
     split_vector,names_vector,values_vector,names_short_vector,values_vector_list,MC_idx_list,HXfull_all_fin,coordinates=utils_new.load_priors_psm(c,variab_list,variab_season_dict,proxy_db_all)
     #resample proxies (do this after loading priors as we eventually define the proxy error to be equal to the model variance)
     final_list,final_list_r=utils_new.resample_wrap(c,proxy_db_all,HXfull_all_fin)
